@@ -27,14 +27,15 @@ Predict health insurance premiums using machine learning. This project demonstra
 ⸻
 
 ## Usage
-	1.	Clone the repo:
-    `git clone https://github.com/Mazdiz/insurance-premium`
+	1. Clone the repo:  
+```bash
+git clone https://github.com/Mazdiz/insurance-premium
 
 	2.	Install dependencies:
-    `pip install -r requirements.txt`
+pip install -r requirements.txt
 
   3.	Run the app:
-    `streamlit run app.py`
+streamlit run app.py
 
 	4.	Input customer details to see the predicted insurance premium
 
