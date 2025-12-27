@@ -1,60 +1,68 @@
-# Health Insurance Premium Prediction
+# Health Insurance Premium Prediction 🏥
 
 [Live Demo](https://ml-regression-project-premium-prediction.streamlit.app)
 
-⸻
 
-## Overview
+## 📌 Overview
+This project predicts health insurance premiums using machine learning. It fulfills the requirements for a modular Python application, demonstrating a full data science workflow: data cleaning, feature engineering, regression modeling (XGBoost), and deployment via Streamlit.
 
-Predict health insurance premiums using machine learning. This project demonstrates a full data science workflow: data cleaning, feature engineering, regression modeling, evaluation, and deployment via Streamlit.
 
-⸻
+## 🚀 Key Features
+Modular Architecture: Organized into a Main Module (main.py) for the UI and a Logic Module (prediction_helper.py) for processing.
 
-## Key Features
-	•	End-to-end ML model predicting insurance premiums
-	•	Handles data preprocessing, cleaning, and feature engineering
-	•	Implements regression algorithms for accurate predictions
-	•	Interactive Streamlit app for real-time user input
-	•	Visualizes insights from customer data
+Data Handling: Uses Dictionaries and Lists to manage feature inputs and categorical encoding mapping.
 
-⸻
+Numeric Processing: Implements robust type conversion (e.g., float, int) to handle user inputs from the Streamlit interface.
 
-## Tech Stack
-	•	Language: Python
-	•	Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Streamlit
-	•	Tools: Git, GitHub
-  
-⸻
+Deployment: Interactive Streamlit app for real-time user input and instant premium prediction.
 
-## Usage
-	1. Clone the repo:  
-```bash
+
+## 💻 Tech Stack
+Language: Python 3.13
+
+Environment: Miniconda (/opt/miniconda3/bin/python)
+
+Libraries: Pandas, NumPy, Scikit-learn, XGBoost, Streamlit
+
+Tools: Git, GitHub, Jupyter Notebooks
+
+
+## 🛠️ Installation & Usage
+1. Clone the repo
+
+Bash
 git clone https://github.com/Mazdiz/insurance-premium
+cd insurance-premium
 
-	2.	Install dependencies:
-pip install -r requirements.txt
+2. Install dependencies
 
-  3.	Run the app:
-streamlit run app.py
+Note: Use the specific path to your Miniconda environment to ensure the correct versions are installed.
 
-	4.	Input customer details to see the predicted insurance premium
+Bash
+/opt/miniconda3/bin/python -m pip install -r requirements.txt
 
-⸻
+3. Run the app
 
-## Insights
-	•	Age and pre-existing conditions are the strongest drivers of premium cost
-	•	Enables data-driven pricing decisions for insurance providers
-	•	Supports interactive scenario testing for different customer profiles
+Bash
+/opt/miniconda3/bin/python -m streamlit run main.py
 
-⸻
 
-## Future Improvements
-	•	Explore advanced regression and ensemble models
-	•	Integrate more diverse datasets for generalization
-	•	Add interactive dashboards for deeper analysis
+## 📂 Project Structure
+main.py: The entry point of the application; handles the Streamlit frontend.
 
-⸻
+prediction_helper.py: The backend logic module that loads the model and processes data.
 
-## Contact
-	•	LinkedIn: [Prudence Mpieri](https://www.linkedin.com/in/prudencempieri)
-  	•	Github: [Mazdiz](https://github.com/Mazdiz)
+Artifacts/: Contains the pre-trained XGBoost model and scaling objects.
+
+Insurance_Analysis.ipynb: The complete notebook containing EDA and model training logic.
+
+
+## 📊 Insights
+Feature Importance: Age, BMI, and smoking status are the strongest drivers of premium costs.
+
+## Optimization: The XGBoost model was patched for compatibility with Python 3.13 to ensure stable runtime performance.
+
+
+## 🤝 Contact
+•	LinkedIn: [Prudence Mpieri](https://www.linkedin.com/in/prudencempieri)
+•	Github: [Mazdiz](https://github.com/Mazdiz)
